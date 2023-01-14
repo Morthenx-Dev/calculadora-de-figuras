@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Caliguras!</h1>
-        <h2>Calculadora de propiedades de figuras geometricas</h2>
-    </header>
-    <main>
-        <section>
-            <form action="">
-                <h3>Cuadrado</h3>
-                <label for="">inserta el valor de los lados del cuadrado</label>
-                <input type="number" name="" id="">
-                <button></button>
-            </form>
-            <form action="">
-                <h3>Triangulo</h3>
-                <label for="">inserta el valor de los lados del cuadrado</label>
-                <input type="number" name="" id="">
-                <button></button>
-            </form>
-            <form action="">
-                <h3>Circulo</h3>
-                <label for="">inserta el valor de los lados del cuadrado</label>
-                <input type="number" name="" id="">
-                <button></button>
-            </form>
-        </section>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <Script src="./figuras.js"></Script>
+        <header>
+            <h1>Caliguras!</h1>
+            <h2>Calculadora de propiedades de figuras geometricas</h2>
+        </header>
+        <main>
+            <section>
+                <form action="">
+                    <h3>Cuadrado</h3>
+                    <label for="ImputCuadrado">inserta el valor de los lados del cuadrado</label>
+                    <input type="number" name="" id="InputCuadrado">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">calcula el perimetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">calcula el area</button>
+                </form>
+                <form action="">
+                    <h3>Triangulo</h3>
+                    <label for="ImputTriangulo">inserta el valor de los lados del cuadrado</label>
+                    <input type="number" name="lado 1" id="InputTriangulo1" >
+                    <input type="number" name="lado 2" id="InputTriangulo2" >
+                    <input type="number" name="lado 3" id="InputTriangulo3" >
+                    <button type="button" onclick="perimetroTriangulo()">calcula el perimetro</button>
+                    <button type="button" onclick="">cuales son sus angulos?</button>
+                    <button type="button" onclick="">cual es su altura y area</button>
+                </form>
+                <form action="">
+                    <h3>Circulo</h3>
+                    <label for="ImputCirculo">inserta el valor de los lados del cuadrado</label>
+                    <input type="number" name="" id="InputCirculo1">
+                    <button type="button" onclick="radioCirculo()">calcula el radio</button>
+                </form>
+            </section>
+        </main>
+    </body>
 </html>
