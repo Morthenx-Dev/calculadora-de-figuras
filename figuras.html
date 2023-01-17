@@ -4,38 +4,59 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./figuras.css">
         <title>Document</title>
     </head>
     <body>
         <Script src="./figuras.js"></Script>
-        <header>
-            <h1>Caliguras!</h1>
-            <h2>Calculadora de propiedades de figuras geometricas</h2>
+        <header class="header">
+            <h1 class="header_tittle">Caliguras!</h1>
+            <h2 class="header_subtittle">Calculadora de propiedades de figuras geometricas</h2>
         </header>
         <main>
-            <section>
-                <form action="">
-                    <h3>Cuadrado</h3>
-                    <label for="ImputCuadrado">inserta el valor de los lados del cuadrado</label>
-                    <input type="number" name="" id="InputCuadrado">
-                    <button type="button" onclick="calcularPerimetroCuadrado()">calcula el perimetro</button>
-                    <button type="button" onclick="calcularAreaCuadrado()">calcula el area</button>
+            <section class="board">
+                <form class="board_card" action="">
+                    <div class="card__tittle">
+                        <h3>Cuadrado</h3>
+                        <label for="ImputCuadrado">inserta el valor de los lados del cuadrado</label>
+                    </div>
+                    <div class="card__input">
+                        <input type="number" name="" id="InputCuadrado">
+                    </div>
+                    <div class="card__buttons">
+                        <button type="button" onclick="calcularPerimetroCuadrado()">calcula el perimetro</button>
+                        <button type="button" onclick="calcularAreaCuadrado()">calcula el area</button>
+                    </div>
                 </form>
-                <form action="">
-                    <h3>Triangulo</h3>
-                    <label for="ImputTriangulo">inserta el valor de los lados del cuadrado</label>
-                    <input type="number" name="lado 1" id="InputTriangulo1" >
-                    <input type="number" name="lado 2" id="InputTriangulo2" >
-                    <input type="number" name="lado 3" id="InputTriangulo3" >
-                    <button type="button" onclick="perimetroTriangulo()">calcula el perimetro</button>
-                    <button type="button" onclick="">cuales son sus angulos?</button>
-                    <button type="button" onclick="">cual es su altura y area</button>
+                <form class="board_card" action="">
+                    <div class="card__tittle">
+                        <h3>Triangulo</h3>
+                        <p>inserta el valor de los lados del triangulo</p>
+                    </div>
+                    <section class="card__inputTriangulo">
+                        <label for="Inputlado1">ingresa el lado1 del triangulo</label>
+                        <label for="InputHipotenusa">ingresa la hipotenusa del triangulo</label>
+                        <label for="InputBase">ingresa la base del triangulo</label>
+                        <input type="number" name="lado 1" id="Inputlado1" >
+                        <input type="number" name="lado 2" id="InputHipotenusa" >
+                        <input type="number" name="lado 3" id="InputBase" >
+                        <button type="button" onclick="perimetroTriangulo()">calcula el perimetro</button>
+                        <button type="button" onclick="">cuales son sus angulos?</button>
+                        <button type="button" onclick="">cual es su altura y area</button>
+                    </section>
                 </form>
-                <form action="">
-                    <h3>Circulo</h3>
-                    <label for="ImputCirculo">inserta el valor de los lados del cuadrado</label>
-                    <input type="number" name="" id="InputCirculo1">
-                    <button type="button" onclick="radioCirculo()">calcula el radio</button>
+                <form class="board_card" action="">
+                    <div class="card__tittle">
+                        <h3>Circulo</h3>
+                        <label for="ImputCirculo">inserta el valor de el diametro del circulo</label>
+                    </div>
+                    <div class="card__input">
+                        <input type="number" name="" id="InputCirculo1">
+                    </div>
+                    <div class="card__buttons">
+                        <button type="button" onclick="radioCirculo()">calcula el radio</button>
+                        <button type="button" onclick="areaCirculo()">calcula el area</button>
+                    </div>
                 </form>
             </section>
         </main>

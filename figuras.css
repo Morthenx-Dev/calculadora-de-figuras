@@ -1,0 +1,59 @@
+:root{
+    --fondo: #242424;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--fondo);
+    color: aliceblue;
+}
+.header_tittle{
+    margin: 0 20px;
+    padding-top: 0.2rem;
+}
+.header_subtittle{
+    margin-left: 15%;
+    padding-top: 0.5rem;
+}
+.board{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.board_card{
+    height: auto;
+    background-color: var(--fondo);    
+    margin: 1rem 1rem;
+    color: aliceblue;
+    border-radius: 12px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.card__tittle{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.card__input{
+    text-align: center;
+}
+.card__input input{
+    width: 90%;
+}
+.card__buttons{
+    padding-top: 15px;
+    text-align: center;
+    justify-content: space-between;
+}
+.card__inputTriangulo{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 0.4rem;
+}
