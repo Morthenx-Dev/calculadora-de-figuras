@@ -18,11 +18,11 @@ function calcularAreaCuadrado(){
 
 // datos pedidos para el triangulo
 
-const input1 = document.getElementById("InputTriangulo1");
+const input1 = document.getElementById("Inputlado1");
 const lado1 = input1.value;
-const input2 = document.getElementById("InputTriangulo2");
+const input2 = document.getElementById("InputHipotenusa");
 const lado2 = input2.value;
-const input3 = document.getElementById("InputTriangulo3");
+const input3 = document.getElementById("InputBase");
 const lado3 = input3.value;
 
 //funciones del triangulo
