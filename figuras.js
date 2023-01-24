@@ -1,11 +1,16 @@
+function mostrarRespuesta(parametro){
+    const respuesta = document.getElementById("output");
+    respuesta.innerText = parametro;
+}
+
 //funiones del cuadrado
 
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
 
-    let perimetro = value*4;
-    alert( "el parimetro del cuadrado es: " + perimetro);
+    let perimetro = "el parimetro del cuadrado es: " + (value*4);
+    mostrarRespuesta(perimetro)
 }
 
 function calcularAreaCuadrado(){

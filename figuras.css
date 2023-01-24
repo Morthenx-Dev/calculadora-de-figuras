@@ -1,5 +1,6 @@
 :root{
     --fondo: #242424;
+    --grey: #4d4d4d;
 }
 *{
     margin: 0;
@@ -39,21 +40,32 @@
     text-align: center;
     padding-bottom: 15px;
 }
-.card__input{
+.input-number{
     text-align: center;
 }
-.card__input input{
-    width: 90%;
+.card__input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.input-number{
+    flex-direction: column;
 }
 .card__buttons{
     padding-top: 15px;
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.card__inputTriangulo{
-    text-align: center;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 0.4rem;
+button{
+
+}
+.output{
+    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+    
+    height: 5rem;
+    background-color: var(--grey);
+    justify-self: center;
+    border-radius: 6px;
 }

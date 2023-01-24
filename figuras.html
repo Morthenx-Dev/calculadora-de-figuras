@@ -16,46 +16,67 @@
         <main>
             <section class="board">
                 <form class="board_card" action="">
-                    <div class="card__tittle">
+                    <section class="card__tittle">
                         <h3>Cuadrado</h3>
-                        <label for="ImputCuadrado">inserta el valor de los lados del cuadrado</label>
-                    </div>
-                    <div class="card__input">
-                        <input type="number" name="" id="InputCuadrado">
-                    </div>
-                    <div class="card__buttons">
+                    </section>
+                    <section class="card__input">
+                        <section class="input-number">
+                            <label for="ImputCuadrado">inserta el valor de los lados del cuadrado</label>
+                            <input type="number" name="" id="InputCuadrado">
+                        </section>
+                    </section>
+                    <section class="card__buttons">
                         <button type="button" onclick="calcularPerimetroCuadrado()">calcula el perimetro</button>
                         <button type="button" onclick="calcularAreaCuadrado()">calcula el area</button>
+                    </section>
+                    <div class="output">
+                        <p class="" id="output"></p>
                     </div>
                 </form>
                 <form class="board_card" action="">
-                    <div class="card__tittle">
+                    <section class="card__tittle">
                         <h3>Triangulo</h3>
                         <p>inserta el valor de los lados del triangulo</p>
-                    </div>
-                    <section class="card__inputTriangulo">
-                        <label for="Inputlado1">ingresa el lado1 del triangulo</label>
-                        <label for="InputHipotenusa">ingresa la hipotenusa del triangulo</label>
-                        <label for="InputBase">ingresa la base del triangulo</label>
-                        <input type="number" name="lado 1" id="Inputlado1" >
-                        <input type="number" name="lado 2" id="InputHipotenusa" >
-                        <input type="number" name="lado 3" id="InputBase" >
+                    </section>
+                    <section class="card__input">
+                        <section class="input-number">
+                            <label for="Inputlado1">ingresa el lado1 del triangulo</label>
+                            <input type="number" name="lado 1" id="Inputlado1" >
+                        </section>
+                        <section class="input-number">
+                            <label for="InputHipotenusa">ingresa la hipotenusa del triangulo</label>
+                            <input type="number" name="lado 2" id="InputHipotenusa" >
+                        </section>
+                        <section class="input-number">
+                            <label for="InputBase">ingresa la base del triangulo</label>
+                            <input type="number" name="lado 3" id="InputBase" >
+                        </section>
+                    </section>
+                    <section class="card__buttons">
                         <button type="button" onclick="perimetroTriangulo()">calcula el perimetro</button>
                         <button type="button" onclick="">cuales son sus angulos?</button>
                         <button type="button" onclick="">cual es su altura y area</button>
                     </section>
+                    <div class="output">
+                        <p class=""></p>
+                    </div>
                 </form>
                 <form class="board_card" action="">
-                    <div class="card__tittle">
+                    <section class="card__tittle">
                         <h3>Circulo</h3>
-                        <label for="ImputCirculo">inserta el valor de el diametro del circulo</label>
-                    </div>
-                    <div class="card__input">
-                        <input type="number" name="" id="InputCirculo1">
-                    </div>
-                    <div class="card__buttons">
+                    </section>
+                    <section class="card__input">
+                        <section class="input-number">
+                            <label for="ImputCirculo">inserta el valor de el diametro del circulo</label>
+                            <input type="number" name="" id="InputCirculo1">
+                        </section>
+                    </section>
+                    <section class="card__buttons">
                         <button type="button" onclick="radioCirculo()">calcula el radio</button>
                         <button type="button" onclick="areaCirculo()">calcula el area</button>
+                    </section>
+                    <div class="output">
+                        <p class=""></p>
                     </div>
                 </form>
             </section>
