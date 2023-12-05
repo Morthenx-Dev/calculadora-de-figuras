@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./figuras.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <Script src="./figuras.js"></Script>
+        <header class="header">
+            <h1 class="header_tittle">Caliguras!</h1>
+            <h2 class="header_subtittle">Calculadora de propiedades de figuras geometricas</h2>
+        </header>
+        <main>
+            <section class="board">
+                <form class="board_card" action="">
+                    <section class="card__tittle">
+                        <h3>Cuadrado</h3>
+                    </section>
+                    <section class="card__input">
+                        <section class="input-number">
+                            <label for="ImputCuadrado">inserta el valor de los lados del cuadrado</label>
+                            <input type="number" name="" id="InputCuadrado">
+                        </section>
+                    </section>
+                    <section class="card__buttons">
+                        <button type="button" onclick="calcularPerimetroCuadrado()">calcula el perimetro</button>
+                        <button type="button" onclick="calcularAreaCuadrado()">calcula el area</button>
+                    </section>
+                    <div class="output">
+                        <p class="" id="output"></p>
+                    </div>
+                </form>
+                <form class="board_card" action="">
+                    <section class="card__tittle">
+                        <h3>Triangulo</h3>
+                        <p>inserta el valor de los lados del triangulo</p>
+                    </section>
+                    <section class="card__input">
+                        <section class="input-number">
+                            <label for="Inputlado1">ingresa el lado1 del triangulo</label>
+                            <input type="number" name="lado 1" id="Inputlado1" >
+                        </section>
+                        <section class="input-number">
+                            <label for="InputHipotenusa">ingresa la hipotenusa del triangulo</label>
+                            <input type="number" name="lado 2" id="InputHipotenusa" >
+                        </section>
+                        <section class="input-number">
+                            <label for="InputBase">ingresa la base del triangulo</label>
+                            <input type="number" name="lado 3" id="InputBase" >
+                        </section>
+                    </section>
+                    <section class="card__buttons">
+                        <button type="button" onclick="perimetroTriangulo()">calcula el perimetro</button>
+                        <button type="button" onclick="">cuales son sus angulos?</button>
+                        <button type="button" onclick="">cual es su altura y area</button>
+                    </section>
+                    <div class="output">
+                        <p class=""></p>
+                    </div>
+                </form>
+                <form class="board_card" action="">
+                    <section class="card__tittle">
+                        <h3>Circulo</h3>
+                    </section>
+                    <section class="card__input">
+                        <section class="input-number">
+                            <label for="ImputCirculo">inserta el valor de el diametro del circulo</label>
+                            <input type="number" name="" id="InputCirculo1">
+                        </section>
+                    </section>
+                    <section class="card__buttons">
+                        <button type="button" onclick="radioCirculo()">calcula el radio</button>
+                        <button type="button" onclick="areaCirculo()">calcula el area</button>
+                    </section>
+                    <div class="output">
+                        <p class=""></p>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
